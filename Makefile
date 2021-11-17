@@ -44,12 +44,12 @@ $(BIN_DIR)/$(TARGET): $(SRCS) Makefile go.mod go.sum
 	    -linkmode external \
 	    -extldflags \
 	    -static \
-	    -X github.com/com-gft-tsbo-source/common/ms-framework/dispatcher._build_component="$(COMPONENT)" \
-	    -X github.com/com-gft-tsbo-source/common/ms-framework/dispatcher._build_module="$(MODULE)" \
-	    -X github.com/com-gft-tsbo-source/common/ms-framework/dispatcher._build_project="$(PROJECT)" \
-	    -X github.com/com-gft-tsbo-source/common/ms-framework/dispatcher._build_customer="$(CUSTOMER)" \
-	    -X github.com/com-gft-tsbo-source/common/ms-framework/dispatcher._build_stamp="$(TIMESTAMP)" \
-	    -X github.com/com-gft-tsbo-source/common/ms-framework/dispatcher._build_commit="$(_GITHASH)" \
+	    -X github.com/com-gft-tsbo-source/go-common/ms-framework/dispatcher._build_component="$(COMPONENT)" \
+	    -X github.com/com-gft-tsbo-source/go-common/ms-framework/dispatcher._build_module="$(MODULE)" \
+	    -X github.com/com-gft-tsbo-source/go-common/ms-framework/dispatcher._build_project="$(PROJECT)" \
+	    -X github.com/com-gft-tsbo-source/go-common/ms-framework/dispatcher._build_customer="$(CUSTOMER)" \
+	    -X github.com/com-gft-tsbo-source/go-common/ms-framework/dispatcher._build_stamp="$(TIMESTAMP)" \
+	    -X github.com/com-gft-tsbo-source/go-common/ms-framework/dispatcher._build_commit="$(_GITHASH)" \
 	  " \
 	  -a \
 	  -o "$@" \
