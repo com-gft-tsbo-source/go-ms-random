@@ -1,6 +1,7 @@
 bin/
 pkg/
 dist/
+build/
 *.pyc
 *.a
 *.o
