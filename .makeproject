@@ -1,5 +1,5 @@
 CUSTOMER ?= com.gft.tsbo
-PROJECT ?= com.gft.tsbo.source
+PROJECT ?= $(CUSTOMER).source
 MODULE ?= backend
 COMPONENT ?= ms-random
 GIT_HOST ?= github.com
