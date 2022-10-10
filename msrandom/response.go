@@ -19,14 +19,14 @@ type RandomResponse struct {
 // ###########################################################################
 
 // InitRandomResponse Constructor of a response of ms-random
-func InitRandomResponse(r *RandomResponse, status string, ms *MsRandom) {
-	microservice.InitResponseFromMicroService(&r.Response, ms, status)
+func InitRandomResponse(r *RandomResponse, code int, status string, ms *MsRandom) {
+	microservice.InitResponseFromMicroService(&r.Response, ms, code, status)
 	r.Value = 0
 }
 
 // NewRandomResponse ...
-func NewRandomResponse(status string, ms *MsRandom) *RandomResponse {
+func NewRandomResponse(code int, status string, ms *MsRandom) *RandomResponse {
 	var r RandomResponse
-	InitRandomResponse(&r, status, ms)
+	InitRandomResponse(&r, code, status, ms)
 	return &r
 }
